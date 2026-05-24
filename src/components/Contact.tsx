@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="flex gap-3 items-center">
             <Link
-              href={"https://virtualproweb.wordpress.com/" || "#"} 
+              href={"https://virtualpros.vercel.app/" || "#"} 
               target="_blank" 
               rel="noopener noreferrer"
               className="footerSocials"
