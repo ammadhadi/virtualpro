@@ -12,6 +12,7 @@ import Team from "@/components/Team";
 import MeetingSet from "@/components/MeetingSet";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
+import FloatingWhatsApp from "@/components/FloatingWhatsapp";
 
 const HomePage = () => {
   // animation AOS Setup
@@ -52,6 +53,7 @@ const HomePage = () => {
           {/* <Team /> */}
           <MeetingSet/>
           <Contact/>
+          <FloatingWhatsApp/>
         </div>
       </div>
     </div>

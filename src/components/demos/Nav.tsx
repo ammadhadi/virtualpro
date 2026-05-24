@@ -24,7 +24,7 @@ const Nav = ({ openNav }: Props) => {
           />
         </Link>
         <Link href="#About" className="nav-link">
-          ABOUT Us
+          ABOUT US
         </Link>
         <Link href="#Services" className="nav-link">
           SERVICES

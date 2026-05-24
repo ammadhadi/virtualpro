@@ -11,7 +11,7 @@ const MeetingSet = () => {
           <div>
             <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[--company-color]">
               Appointment
-              <span className="w-[30px] hidden md:block h-[2.5px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span>
+              {/* <span className="w-[30px] hidden md:block h-[2.5px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span> */}
             </h1>
             <h2 className="text-[35px] md:text-[45px] lg:text-[55px] text-white md:leading-[3rem] leading-[2rem] capitalize mb-[1.5rem] font-Kanit font-semibold">
               Let&apos;s make things happen!

@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
 
   return (
     <main
-      className="bg-[--company-background-color] h-full w-full flex justify-center items-center md:py-28 lg:py-5 p-6 md:px-10"
+      className="bg-[--company-background-color] h-auto w-full flex justify-center items-center md:py-28 lg:py-5 p-6 md:px-10"
       id="contact"
     >
       <section className="flex flex-col md:flex-row justify-center items-start w-full">
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
                 className="text-white rounded-full p-2 shadow-md"
               />
               <p className=" text-white font-Kanit text-sm font-medium">
-                virtualpropvtltd@hotmail.com
+                <Link href="mailto:virtualpropvtltd@hotmail.com">virtualpropvtltd@hotmail.com</Link>
               </p>
             </div>
             <div className="flex gap-3 items-center">
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                 className="text-white font-Kanit rounded-full p-2 shadow-md"
               />
               <p className="text-white font-Kanit text-sm font-medium">
-                +923132537173
+                <Link href="tel:+923132537173">+923132537173</Link>
               </p>
             </div>
             <div className="flex gap-3 items-center">

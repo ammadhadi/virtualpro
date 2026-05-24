@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
         <div>
           <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[--company-color]">
             About Our Company{" "}
-            <span className="w-[30px] hidden md:block h-[2.5px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span>
+            {/* <span className="w-[30px] hidden md:block h-[2.5px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span> */}
           </h1>
           <h2 className="text-[35px] md:text-[45px] lg:text-[55px] text-white md:leading-[3rem] leading-[2rem] capitalize mb-[1.5rem] font-Kanit font-semibold">
             The Best Choice For Your Successful Business!
@@ -73,7 +74,7 @@ const About = () => {
               reach and engagement. From captivating website design to optimized
               content and strategic automation, we stand as your dedicated
               partners in achieving unparalleled success in the digital
-              realm.and engagement. Whether you need a captivating website,
+              reach and engagement. Whether you need a captivating website,
               optimized content, or strategic business automation, we are your
               dedicated partners in achieving unparalleled success in the
               digital realm.
@@ -81,13 +82,13 @@ const About = () => {
           </div>
           <div className="flex justify-center">
             <button
-              className="h-[50px] w-[150px] hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
+              className="h-[50px] w-[300px] hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
             sm:text-[18px] font-Kanit text-[--company-background-color] bg-slate-100 hover:bg-[--company-color] border-2 border-[--company-background-color] 
             hover:border-[--company-color] flex items-center justify-center"
             >
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                Explore Us
-              </a>
+              <Link href="/Meeting" target="_blank" rel="noopener noreferrer">
+                Get a Free Consultation Now
+              </Link>
               <ArrowUpRight className=" w-[1.5rem] h-[1.5rem] text-[--company-background-color]" />
             </button>
           </div>
