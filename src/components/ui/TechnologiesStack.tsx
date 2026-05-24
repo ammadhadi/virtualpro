@@ -33,25 +33,19 @@ const TechnologiesStack = () => {
       responsive={responsive}
       itemClass="item"
     >
-      
-      <TechnolodiesImages image="/icons/wordpress-icon.svg" />
-      <TechnolodiesImages image="/icons/html-icon.svg" />
-      <TechnolodiesImages image="/icons/css-icon.svg" />
-      <TechnolodiesImages image="/icons/javascript.svg" />
-      <TechnolodiesImages image="/icons/typescript.svg" />
-      <TechnolodiesImages image="/icons/angular-icon.svg" />
-      <TechnolodiesImages image="/icons/vue-js-icon.svg" />
-      <TechnolodiesImages image="/icons/nextjs.svg" />
-      <TechnolodiesImages image="/icons/nestjs.svg" />
-      <TechnolodiesImages image="/icons/react-js-icon.svg" />
-      <TechnolodiesImages image="/icons/nodejs.svg" />
-      <TechnolodiesImages image="/icons/tailwind-css-icon.svg" />
-      <TechnolodiesImages image="/icons/shadcn-ui.png" />
-      <TechnolodiesImages image="/icons/materialui.svg" />
-      <TechnolodiesImages image="/icons/graphql.svg" />
-      <TechnolodiesImages image="/icons/mongodb.svg" />
-
-
+      <TechnolodiesImages image="/icons/wordpress-icon.svg" alt ="Wordpress" title = "Wordpress" />
+      <TechnolodiesImages image="/icons/html-icon.svg" alt ="HTML" title = "HTML" />
+      <TechnolodiesImages image="/icons/css-icon.svg" alt ="CSS3" title = "CSS3" />
+      <TechnolodiesImages image="/icons/javascript.svg" alt ="Javascript" title = "Javascript" />
+      <TechnolodiesImages image="/icons/typescript.svg" alt ="Typescript" title = "Typescript" />
+      <TechnolodiesImages image="/icons/angular-icon.svg" alt ="Angular" title = "Angular" />
+      <TechnolodiesImages image="/icons/vue-js-icon.svg" alt ="Vue" title = "Vue" />
+      <TechnolodiesImages image="/icons/nextjs.svg" alt ="Nextjs" title = "Nextjs" />
+      <TechnolodiesImages image="/icons/react-js-icon.svg" alt ="ReactJs" title = "ReactJs" />
+      <TechnolodiesImages image="/icons/nodejs.svg" alt ="Nodejs" title = "Nodejs" />
+      <TechnolodiesImages image="/icons/tailwind-css-icon.svg" alt ="Tailwind" title = "Tailwind" />
+      <TechnolodiesImages image="/icons/graphql.svg" alt ="Graphql" title = "Graphql" />
+      <TechnolodiesImages image="/icons/mongodb.svg" alt ="Mongodb" title = "Mongodb" />
     </Carousel>
   );
 };

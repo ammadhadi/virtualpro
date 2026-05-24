@@ -4,14 +4,14 @@ import React from "react";
 
 const MeetingSet = () => {
   return (
-    <div id="Appointment" className="bg-[#181860]  ">
+    <div id="Appointment" className="bg-[--company-background-color]  ">
       <span className="w-[80%] hidden md:block h-[1.5px] bg-[#e4e3e3] mx-auto "></span>
-      <div className="pb-[4rem] pt-[4rem] md:pt-[3rem]">
+      <div className="pt-[4rem] md:pt-[3rem]">
         <div className="max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
           <div>
-            <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[#eeb84b]">
+            <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[--company-color]">
               Appointment
-              <span className="w-[30px] hidden md:block h-[2.5px] bg-[#eeb84b] rounded-sm ml-2.5 mt-1.5"></span>
+              <span className="w-[30px] hidden md:block h-[2.5px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span>
             </h1>
             <h2 className="text-[35px] md:text-[45px] lg:text-[55px] text-white md:leading-[3rem] leading-[2rem] capitalize mb-[1.5rem] font-Kanit font-semibold">
               Let&apos;s make things happen!
@@ -24,9 +24,9 @@ const MeetingSet = () => {
             </div>
             <div className="flex justify-center">
               <button
-                className="h-[150px] w-[150px] hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
-            sm:text-[18px] font-Kanit text-[#181860] bg-slate-100 hover:bg-[#eeb84b] border-2 border-[#181860] 
-            hover:border-[#eeb84b] flex items-center justify-center"
+                className="h-[50px] w-[150px] hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
+            sm:text-[18px] font-Kanit text-[--company-background-color] bg-slate-100 hover:bg-[--company-color] border-2 border-[--company-background-color] 
+            hover:border-[--company-color] flex items-center justify-center"
               >
                 <Link href="/Meeting" rel="noopener noreferrer">
                   Book a Call

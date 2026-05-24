@@ -25,24 +25,26 @@ const Meeting = () => {
 
           {[
             {
+              sequence: 1,
               title: "Development + Design",
               description:
                 "Turn your ideas into reality with our development and design services.",
             },
-
             {
+              sequence: 2,
               title: "Free Consultation",
               description:
                 "Get expert advice on how to improve your business and increase your online presence.",
             },
             {
+              sequence: 3,
               title: "Technical Support",
               description:
                 "Get technical support for your website or application.",
             },
           ].map((item, index) => (
             <motion.div
-              key={index}
+              key={item.sequence}
               variants={checkItemVariants}
               initial="hidden"
               animate="visible"

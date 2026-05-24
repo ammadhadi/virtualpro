@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Dynamatics",
+  title: "Virtual Pro",
   description: "Tech Company",
 };
 

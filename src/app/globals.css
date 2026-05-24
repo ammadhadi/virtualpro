@@ -8,19 +8,24 @@
 @layer components {
   .nav-link {
     @apply relative font-semibold text-white cursor-pointer text-[13px] w-fit md:block after:block after:content-[""]
-        after:absolute after:h-[3px] after:bg-[#eeb84b] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition
-        after:duration-300 after:origin-center hidden focus:text-[#eeb84b];
+        after:absolute after:h-[3px] after:bg-[--company-color] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition
+        after:duration-300 after:origin-center hidden focus:text-[--company-color];
   }
 
   .nav-link-mobile {
     @apply relative font-semibold text-white cursor-pointer text-[25px] w-fit md:block after:block after:content-[""]
-        after:absolute after:h-[3px] after:bg-[#eeb84b] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition
-        after:duration-300 after:origin-center focus:text-[#eeb84b];
+        after:absolute after:h-[3px] after:bg-[--company-color] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition
+        after:duration-300 after:origin-center focus:text-[--company-color];
   }
 
   .heading{
     @apply text-center text-slate-200 text-[30px] sm:text-[35px] md:text-[45px] font-bold uppercase;
   }
+}
+
+:root{
+  --company-color: #d2202c; /* #eeb84b */
+  --company-background-color : #3a3939; /* #181860 */
 }
 
 * {
@@ -33,4 +38,8 @@
 
 .flexCenter {
   @apply flex items-center justify-center;
+}
+
+.footerSocials{
+  display: contents;
 }

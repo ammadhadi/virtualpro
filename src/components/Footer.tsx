@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="bg-[--company-background-color]">© 2026 Virtual Pro.</div>
   )
 }
 

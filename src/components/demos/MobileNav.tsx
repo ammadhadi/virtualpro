@@ -35,9 +35,9 @@ const MobileNav = ({ nav, closeNav }: Props) => {
       </div>
       <div
         onClick={closeNav}
-        className="absolute z-[100000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-[#eeb84b]"
+        className="absolute z-[100000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-[--company-color]"
       >
-        <X className="w-[2rem] h-[2rem] top-10 text-white hover:text-[#eeb84b]"/>
+        <X className="w-[2rem] h-[2rem] top-10 text-white hover:text-[--company-color]"/>
       </div>
     </div>
   );

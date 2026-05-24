@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const teamcard = [
   {
+    sequence: 1,
     img: "",
     name: "Ammad Hadi",
     title: "CEO & COO",
@@ -10,6 +11,7 @@ const teamcard = [
     social: "Instagram",
   },
   {
+    sequence: 2,
     img: "",
     name: "Tahir Usman",
     title: "CTO",
@@ -17,6 +19,7 @@ const teamcard = [
     social: "Face Book",
   },
   {
+    sequence: 3,
     img: "",
     name: "Nawaz Malik",
     title: "Digital Marketer ",
@@ -24,6 +27,7 @@ const teamcard = [
     social: "Linkdin",
   },
   {
+    sequence: 4,
     img: "",
     name: "Noman Anwar",
     title: "Developer",
@@ -38,7 +42,7 @@ const TeamCard = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-10">
         {teamcard.map((teamcard) => (
           <div
-            key={teamcard.name}
+            key={teamcard.sequence}
             className=" font-Kanit flex flex-col justify-between h-full w-[40vh] space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-110 transition-transform rounded-md"
           >
             {/* <Image

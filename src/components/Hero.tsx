@@ -14,7 +14,7 @@ const Hero = () => {
         loop
         className="absolute h-full w-full top-0 bottom-0 object-cover"
       ></video>
-      <div className="flex flex-col w-full h-max pt-12 lg:pt-10 pb-4 justify-center m-auto z-20">
+      <div className="flex flex-col w-full h-max pt-12 lg:pt-10 pb-4 justify-center m-auto z-20 px-auto md:px-20 lg:px-20">
         <h1
           data-aos="fade-left"
           data-aos-delay="100"
@@ -22,7 +22,7 @@ const Hero = () => {
         >
           Powerful Digital
           <br /> Solutions With{" "}
-          <span className="text-[#eeb84b] ">Dynamatics</span>
+          <span className="text-[--company-color] ">Virtual Pro</span>
         </h1>
         <div data-aos="fade-left" data-aos-delay="300">
           <TextAnimation />
@@ -40,7 +40,7 @@ const Hero = () => {
           Marketing Strategies.
         </h2>
         <Link href="#About" data-aos="fade-left" data-aos-delay="700">
-          <MousePointerClick className="text-[#eeb84b] h-[150px] w-[150px] md:h-[200px] md:w-[200px] stroke-1 opacity-30 " />
+          <MousePointerClick className="text-[--company-color] h-[150px] w-[150px] md:h-[200px] md:w-[200px] stroke-1 opacity-30 " />
         </Link>
       </div>
     </section>

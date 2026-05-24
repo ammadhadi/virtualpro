@@ -11,6 +11,7 @@ import Portfolio from "@/components/Portfolio";
 import Team from "@/components/Team";
 import MeetingSet from "@/components/MeetingSet";
 import Banner from "@/components/Banner";
+import Contact from "@/components/Contact";
 
 const HomePage = () => {
   // animation AOS Setup
@@ -46,10 +47,11 @@ const HomePage = () => {
           <About />
           <Technologies />
           <Service />
-          <Banner/>
+          {/* <Banner/> */}
           <Portfolio />
-          <Team />
+          {/* <Team /> */}
           <MeetingSet/>
+          <Contact/>
         </div>
       </div>
     </div>

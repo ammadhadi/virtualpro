@@ -6,9 +6,9 @@ import BoxRevealDemo from "./box-reveal-demo";
 const Process = () => {
   return (
     <div className="md:px-0 mx-6 md:mx-auto">
-      <h1 className=" text-[25px] md:text-[35px] lg:text-[45px] text-[#181860] font-Kanit font-semibold  md:text-center flex items-center gap-x-2 mx-auto justify-center">
+      <h1 className=" text-[25px] md:text-[35px] lg:text-[45px] text-[--company-background-color] font-Kanit font-semibold  md:text-center flex items-center gap-x-2 mx-auto justify-center">
         Our{" "}
-        <span className="text-[#eeb84b] flex gap-x-1 items-center">
+        <span className="text-[--company-color] flex gap-x-1 items-center">
           {" "}
           <Image
             src={"/icons/squiggle.svg"}

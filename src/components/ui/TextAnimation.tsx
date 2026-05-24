@@ -15,7 +15,7 @@ const TextAnimation = () => {
         // 1000
       ]}
       speed={50}
-      className="text-[16.2px] md:text-[23px] text-[#eeb84b] font-bold font-Kanit h-10"
+      className="text-[16.2px] md:text-[23px] text-[--company-color] font-bold font-Kanit h-10"
       repeat={Infinity}
     />
   );

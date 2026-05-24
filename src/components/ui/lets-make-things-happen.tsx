@@ -21,9 +21,9 @@ function LetsMakeThingsHappenSection() {
         <div className="flex justify-center mt-5">
           <Link
             href="/Meeting"
-            className="h-[150px] w-[150px] hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
-            sm:text-[18px] font-Kanit text-[#181860] bg-slate-100 hover:bg-[#eeb84b] border-2 border-[#181860] 
-            hover:border-[#eeb84b] flex items-center justify-center"
+            className="h-[50px] w-[150px] hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
+            sm:text-[18px] font-Kanit text-[--company-background-color] bg-slate-100 hover:bg-[--company-color] border-2 border-[--company-background-color] 
+            hover:border-[--company-color] flex items-center justify-center"
           >
             Book a Call
           </Link>
