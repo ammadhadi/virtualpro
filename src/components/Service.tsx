@@ -69,7 +69,7 @@ const service = [
 
 const Service = () => {
   return (
-    <div className="  bg-[--company-background-color]">
+    <div id="Services" className="  bg-[--company-background-color]">
       <span className="w-[80%] hidden md:block h-[1.5px] bg-[#e4e3e3] mx-auto "></span>
       <div className="pb-[4rem] pt-[4rem] md:pt-[4rem]">
         <div className="max-w-screen-2xl w-[80%] md:px-0 mx-6 md:mx-auto ">

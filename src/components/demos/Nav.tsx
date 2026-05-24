@@ -23,19 +23,19 @@ const Nav = ({ openNav }: Props) => {
             className="h-16 w-auto object-contain"
           />
         </Link>
-        <Link href="/WhoWeAre" className="nav-link">
+        <Link href="#About" className="nav-link">
           ABOUT Us
         </Link>
-        <Link href="/ServicePage" className="nav-link">
+        <Link href="#Services" className="nav-link">
           SERVICES
         </Link>
-        <Link href="#" className="nav-link">
+        <Link href="#CaseStudies" className="nav-link">
           CASE STUDIES
         </Link>
-        <Link href="#" className="nav-link">
+        {/* <Link href="#" className="nav-link">
           CAREERS
-        </Link>
-        <Link href="/ContactUs" className="nav-link">
+        </Link> */}
+        <Link href="#contact" className="nav-link">
           CONTACT US
         </Link>
         <div onClick={openNav}>

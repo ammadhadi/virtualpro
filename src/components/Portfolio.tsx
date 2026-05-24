@@ -36,7 +36,7 @@ export default function Home() {
     });
 
   return (
-    <div className="">
+    <div className="" id="CaseStudies">
       <main
         className={`
        ${inter.className}
