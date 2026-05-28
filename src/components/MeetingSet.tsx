@@ -10,7 +10,7 @@ const MeetingSet = () => {
         <div className="max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
           <div>
             <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[--company-color]">
-              Appointment
+              Contact Us
               {/* <span className="w-[30px] hidden md:block h-[2.5px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span> */}
             </h1>
             <h2 className="text-[35px] md:text-[45px] lg:text-[55px] text-white md:leading-[3rem] leading-[2rem] capitalize mb-[1.5rem] font-Kanit font-semibold">
