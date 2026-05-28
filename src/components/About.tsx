@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { MdWorkspacePremium, MdStars, MdTrendingUp, MdVerified, MdBusinessCenter, MdSupportAgent } from "react-icons/md";
 import Link from "next/link";
 
 const About = () => {
@@ -31,15 +32,73 @@ const About = () => {
           </h2>
           <div className="mb-8">
             <p className="text-[14px] md:text-[18px] text-justify text-slate-200 font-Kanit w-[100%] font-light ">
-              Virtual Pro delivers customized digital solutions leveraging
-              cutting-edge technology. Specializing in software development, web
-              design, automation, and branding, we integrate AI and digital
-              analytics for informed decision-making. Our expertise optimizes
-              online presence, enhances sales through data-driven strategies,
-              and streamlines operations for maximum efficiency in the digital
-              landscape.
+              VirtualPro was built with one mission to help growing businesses access high-quality digital solutions without paying enterprise-level agency prices. 
+              Since 2014, we have partnered with clients across 10+ countries to build websites, apps, brands, and digital systems designed not only to look professional but to deliver real business results.
+              Behind VirtualPro is a team of developers, designers, and digital strategists focused on performance, scalability, and long term growth. We donot believe in launching projects and disappearing. 
+              We stay, optimize, improve, and grow with our clients. Over the years, we have successfully delivered projects for businesses across industries helping them strengthen their digital presence, improve operations, and generate measurable growth.
+              <br/>
+              <br/>
+              <b>Why Clients Choose VirtualPro</b>
+              <br/>
+              <br/>
             </p>
-            <div className="flex items-center justify-center gap-10 mx-10 my-10">
+            <div className="flex flex-col gap-4 w-full">
+              <div className="flex gap-3 items-center">
+                <MdWorkspacePremium
+                  size={35}
+                  className="text-white rounded-full p-2 shadow-md"
+                />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  10+ Years of Industry Experience
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MdStars
+                  size={35}
+                  className="text-white rounded-full p-2 shadow-md"
+                />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  Clients Served Across 10+ Countries
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MdTrendingUp
+                  size={35}
+                  className="text-white rounded-full p-2 shadow-md"
+                />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  Performance Driven Approach
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MdVerified
+                  size={35}
+                  className="text-white rounded-full p-2 shadow-md"
+                />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  Affordable Solutions Without Compromising Quality
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MdBusinessCenter
+                  size={35}
+                  className="text-white rounded-full p-2 shadow-md"
+                />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  Long Term Partnership Mindset
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MdSupportAgent
+                  size={35}
+                  className="text-white rounded-full p-2 shadow-md"
+                />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  End-to-End Digital Support
+                </p>
+              </div>
+            </div>
+            {/* <div className="flex items-center justify-center gap-10 mx-10 my-10">
               <div className="flex items-center justify-center gap-3">
                 <Image
                   priority
@@ -66,18 +125,11 @@ const About = () => {
                   Android and iOs Apps Development
                 </h1>
               </div>
-            </div>
+            </div> */}
             <p className="text-[14px] md:text-[18px] text-justify text-slate-200 font-Kanit w-[100%] font-light ">
-              Focused on digital branding and strategic optimization, we ensure
-              your online presence resonates profoundly. Leveraging advanced
-              technology, we execute impactful campaigns, expanding your brand&apos;s
-              reach and engagement. From captivating website design to optimized
-              content and strategic automation, we stand as your dedicated
-              partners in achieving unparalleled success in the digital
-              reach and engagement. Whether you need a captivating website,
-              optimized content, or strategic business automation, we are your
-              dedicated partners in achieving unparalleled success in the
-              digital realm.
+              <br/>
+              Ready to Build Something That Actually Grows Your Business? 
+              <br/>Let&apos;s turn your ideas into scalable digital solutions backed by global experience and measurable results
             </p>
           </div>
           <div className="flex justify-center">

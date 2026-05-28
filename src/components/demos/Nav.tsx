@@ -30,7 +30,7 @@ const Nav = ({ openNav }: Props) => {
           SERVICES
         </Link>
         <Link href="#CaseStudies" className="nav-link">
-          CASE STUDIES
+          OUR WORK
         </Link>
         {/* <Link href="#" className="nav-link">
           CAREERS

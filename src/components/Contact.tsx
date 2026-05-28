@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
-import { MdFacebook, MdOutlineLocationOn } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
 import Image from "next/image";
 import emailjs from "emailjs-com";
 import Button from "@/components/ui/button";
@@ -41,15 +41,14 @@ const Contact: React.FC = () => {
 
   return (
     <main
-      className="bg-[--company-background-color] h-auto w-full flex justify-center items-center md:py-28 lg:py-5 p-6 md:px-10"
+      className="bg-[--company-background-color] h-auto w-full flex justify-center items-center px-6 md:px-10"
       id="contact"
     >
       <section className="flex flex-col md:flex-row justify-center items-start w-full">
         <article
-          className="hidden h-auto w-full md:w-1/3 lg:w-1/4 rounded-lg md:flex flex-col justify-between items-start 
-          p-6 shadow-lg z-10"
+          className="hidden h-auto w-full md:w-1/3 lg:w-1/4 rounded-lg md:flex flex-col justify-between items-start px-6"
         >
-          <h2 className="text-white font-Kanit text-lg md:text-xl font-bold font-poppins mb-4">
+          <h2 className="text-white font-Kanit text-lg md:text-xl font-bold font-poppins">
             
           </h2>
           <div className="flex flex-col gap-4 w-full">
@@ -125,7 +124,7 @@ const Contact: React.FC = () => {
           </div>
           
         </article>
-        <article className="h-auto w-full md:w-2/3 lg:w-3/5 max-w-lg rounded-lg p-5 flex flex-col justify-center shadow-lg">
+        <article className="h-auto w-full md:w-2/3 lg:w-3/5 max-w-lg rounded-lg p-5 flex flex-col justify-center">
           <div className="ml-0 md:ml-5">
             <h1 className="text-lg md:text-xl mb-2 font-Kanit text-white font-bold">
               Get in Touch
@@ -169,7 +168,7 @@ const Contact: React.FC = () => {
               <div className="flex w-full">
                 <Button
                   text={isLoading ? "Sending..." : "SUBMIT"}
-                  color="bg-#9A4DFF text-white font-Kanit max-h-12 border-transparent shadow-md"
+                  color="bg-white text-black font-Kanit max-h-12 border-transparent"
                   hover="hover:bg-[--company-color]"
                   isDisabled={isLoading}
                 />

@@ -20,9 +20,9 @@ const Hero = () => {
           data-aos-delay="100"
           className=" transition-all  text-[28px] md:text-[60px] text-slate-200 leading-tight md:leading-[1.3] font-Kanit font-semibold"
         >
-          Powerful Digital
-          <br /> Solutions With{" "}
-          <span className="text-[--company-color] ">Virtual Pro</span>
+          Helping Businesses 
+          <br /> Across {" "}
+          <span className="text-[--company-color] ">10+ Countries</span>
         </h1>
         <div data-aos="fade-left" data-aos-delay="300">
           <TextAnimation />
@@ -33,11 +33,11 @@ const Hero = () => {
           data-aos-delay="500"
           className="h-[100%] w-[100%] grid grid-cols-1 mx-auto mt-4 mb-2 font-Kanit text-slate-200 text-[14px] md:text-[16px]"
         >
-          Boost Your Online Presence with Future-Ready Technology Solutions,
+          From websites and mobile apps to branding and digital strategy,
           <br />
-          Combined with Software Development, Branding, and Data-Driven
+          We create high-performing digital solutions backed by 10+ years of international project experience. 
           <br />
-          Marketing Strategies.
+          Let's connect.
         </h2>
         <Link href="#About" data-aos="fade-left" data-aos-delay="700">
           <MousePointerClick className="text-[--company-color] h-[150px] w-[150px] md:h-[200px] md:w-[200px] stroke-1 opacity-30 " />

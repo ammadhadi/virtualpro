@@ -13,6 +13,8 @@ import MeetingSet from "@/components/MeetingSet";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import FloatingWhatsApp from "@/components/FloatingWhatsapp";
+import StatsBar from "@/components/StatusBar";
+import WhyChoose from "@/components/WhyChoose";
 
 const HomePage = () => {
   // animation AOS Setup
@@ -40,6 +42,7 @@ const HomePage = () => {
       anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
     });
   }, []);
+
   return (
     <div className="overflow-x-hidden">
       <div>
@@ -48,9 +51,11 @@ const HomePage = () => {
           <About />
           <Technologies />
           <Service />
+          <StatsBar/>
           {/* <Banner/> */}
           <Portfolio />
           {/* <Team /> */}
+          <WhyChoose/>
           <MeetingSet/>
           <Contact/>
           <FloatingWhatsApp/>

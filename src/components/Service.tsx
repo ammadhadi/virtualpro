@@ -26,9 +26,9 @@ const service = [
   {
     sequence: 4,
     icon: "/images/s_3.png",
-    title: "Social Media Marketing",
+    title: "Social Media Management & Marketing",
     description:
-      "Boost your brand's online presence with our social media marketing services",
+      "Boost your brand's online presence with our social media management and marketing services",
   },
   {
     sequence: 5,
@@ -54,9 +54,9 @@ const service = [
   {
     sequence: 8,
     icon: "/images/s_5.png",
-    title: "Content Creation",
+    title: "Content Creation & Video Editing",
     description:
-      "With our content creation services, we help businesses drive results",
+      "With our content creation services, we help businesses drive results and provide interactive, attractive and impressive videos",
   },
   {
     sequence: 9,
@@ -65,12 +65,19 @@ const service = [
     description:
       "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
   },
+  {
+    sequence: 10,
+    icon: "/images/s_2.png",
+    title: "AI & Automation",
+    description:
+      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+  },
 ];
 
 const Service = () => {
   return (
     <div id="Services" className="  bg-[--company-background-color]">
-      <span className="w-[80%] hidden md:block h-[1.5px] bg-[#e4e3e3] mx-auto "></span>
+      <span className="w-[80%] hidden md:block h-[1.5px] bg-[--company-color] mx-auto "></span>
       <div className="pb-[4rem] pt-[4rem] md:pt-[4rem]">
         <div className="max-w-screen-2xl w-[80%] md:px-0 mx-6 md:mx-auto ">
           <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[--company-color]">

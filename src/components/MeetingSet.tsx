@@ -5,7 +5,7 @@ import React from "react";
 const MeetingSet = () => {
   return (
     <div id="Appointment" className="bg-[--company-background-color]  ">
-      <span className="w-[80%] hidden md:block h-[1.5px] bg-[#e4e3e3] mx-auto "></span>
+      <span className="w-[80%] hidden md:block h-[1.5px] bg-[--company-color] mx-auto "></span>
       <div className="pt-[4rem] md:pt-[3rem]">
         <div className="max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
           <div>
@@ -18,8 +18,7 @@ const MeetingSet = () => {
             </h2>
             <div className="mb-8">
               <p className="text-[14px] md:text-[18px] text-justify text-slate-200 font-Kanit w-[100%] font-light ">
-                Contact us today to learn more about how our digital marketing
-                services can help your business grow and succeed online.
+                Contact us today to learn more about how our services can help your business grow and succeed online.
               </p>
             </div>
             <div className="flex justify-center">
