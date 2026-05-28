@@ -37,7 +37,7 @@ const Hero = () => {
           <br />
           We create high-performing digital solutions backed by 10+ years of international project experience. 
           <br />
-          Let's connect.
+          Let&apos;s connect.
         </h2>
         <Link href="#About" data-aos="fade-left" data-aos-delay="700">
           <MousePointerClick className="text-[--company-color] h-[150px] w-[150px] md:h-[200px] md:w-[200px] stroke-1 opacity-30 " />
