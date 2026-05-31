@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
 import OtherInfo from "./OtherInfo";
 import { Github } from "lucide-react";
@@ -11,6 +11,19 @@ type Props = {
 };
 
 function SlideInfo({ transitionData, currentSlideData }: Props) {
+
+  const openLiveDemoLinkInNewTab = () => {
+    // 1. Get the link directly from your data sources
+    const targetLink = transitionData ? transitionData?.view : currentSlideData.data?.view;
+
+    // 2. Open it immediately if it exists
+    if (targetLink) {
+      window.open(targetLink, "_blank", "noopener,noreferrer");
+    } else {
+      console.warn("Live Demo URL is missing.");
+    }
+  };
+
   return (
     <>
       <motion.span layout className=" mb-2 h-1 w-5 rounded-full bg-white" />
@@ -25,6 +38,7 @@ function SlideInfo({ transitionData, currentSlideData }: Props) {
           <Github className=" text-xl" />
         </button>
         <button
+          onClick={openLiveDemoLinkInNewTab}
           className=" w-fit rounded-full border-[1px] border-[#ffffff8f] px-8 py-3 text-[16px] font-thin transition duration-300 
             ease-in-out hover:bg-white hover:text-black "
         >

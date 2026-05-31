@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 type Props = {
   data: any;
 };
+
 const item = {
   hidden: {
     y: "100%",

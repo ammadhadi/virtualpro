@@ -1,15 +1,17 @@
 import React, { useRef, useState } from "react";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
-import Image from "next/image";
 import emailjs from "emailjs-com";
 import Button from "@/components/ui/button";
-import { PiFacebookLogo, PiInstagramLogo, PiGlobeBold } from "react-icons/pi";
+import { PiFacebookLogo, PiInstagramLogo, PiGlobeBold, PiYoutubeLogo } from "react-icons/pi";
 import Link from "next/link";
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const serviceID = "service_yx7n5oa";
+  const templateID = "template_32izivr";
+  const publicAPIID = "Laes997mredtu53gY";
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,10 +19,13 @@ const Contact: React.FC = () => {
 
     emailjs
       .sendForm(
-        "service_f45gqry",
-        "template_t2xjlnj",
+        serviceID,
+        templateID,
         formRef.current as HTMLFormElement,
-        "IOmcwSsFE3mJ4gTsb" // Public API Key
+        publicAPIID
+        // {
+        //   publicKey: publicAPIID,
+        // }
       )
       .then((result) => {
         console.log(result.text);
@@ -29,6 +34,7 @@ const Contact: React.FC = () => {
         if (formRef.current) {
           formRef.current.reset();
         }
+
       })
       .catch((error) => {
         console.log(error.text);
@@ -80,54 +86,70 @@ const Contact: React.FC = () => {
               </p>
             </div>
             <div className="flex gap-3 items-center">
-            <Link 
-              href={"https://www.facebook.com/VirtualProPvtLtd/" || "#"} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="footerSocials"
-            >
-              <PiFacebookLogo size={35}
-                className="text-white font-Kanit rounded-full p-2 shadow-md" />
-              <p className="text-white font-Kanit text-sm font-medium">
-                VirtualProPvtLtd
-              </p>
-            </Link>
+              <Link 
+                href={"https://www.facebook.com/VirtualProPvtLtd/" || "#"} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footerSocials"
+              >
+                <PiFacebookLogo size={35}
+                  className="text-white font-Kanit rounded-full p-2 shadow-md" />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  VirtualProPvtLtd
+                </p>
+              </Link>
             </div>
             <div className="flex gap-3 items-center">
-            <Link
-              href={"https://www.instagram.com/virtualproahe/" || "#"} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="footerSocials"
-            >
-              <PiInstagramLogo size={35}
-                className="text-white font-Kanit rounded-full p-2 shadow-md" />
-              <p className="text-white font-Kanit text-sm font-medium">
-                virtualproahe
-              </p>
-            </Link>
+              <Link
+                href={"https://www.instagram.com/virtualproahe/" || "#"} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footerSocials"
+              >
+                <PiInstagramLogo size={35}
+                  className="text-white font-Kanit rounded-full p-2 shadow-md" />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  virtualproahe
+                </p>
+              </Link>
             </div>
             <div className="flex gap-3 items-center">
-            <Link
-              href={"https://virtualpros.vercel.app/" || "#"} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="footerSocials"
-            >
-              <PiGlobeBold size={35}
-                className="text-white font-Kanit rounded-full p-2 shadow-md" />
-              <p className="text-white font-Kanit text-sm font-medium">
-                virtualproweb.wordpress.com
-              </p>
-            </Link>
-          </div>
+              <Link
+                href={"https://virtualpros.vercel.app/" || "#"} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footerSocials"
+              >
+                <PiGlobeBold size={35}
+                  className="text-white font-Kanit rounded-full p-2 shadow-md" />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  virtualpros.vercel.app
+                </p>
+              </Link>
+            </div>
+            <div className="flex gap-3 items-center">
+              <Link
+                href={"https://www.youtube.com/@virtualpro3180" || "#"} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footerSocials"
+              >
+                <PiYoutubeLogo size={35}
+                  className="text-white font-Kanit rounded-full p-2 shadow-md" />
+                <p className="text-white font-Kanit text-sm font-medium">
+                  virtualpro
+                </p>
+              </Link>
+            </div>
           </div>
           
         </article>
-        <article className="h-auto w-full md:w-2/3 lg:w-3/5 max-w-lg rounded-lg p-5 flex flex-col justify-center">
+        <article className="h-auto w-full md:w-2/3 lg:w-3/5 max-w-lg rounded-lg p-1 flex flex-col justify-center">
           <div className="ml-0 md:ml-5">
             <h1 className="text-lg md:text-xl mb-2 font-Kanit text-white font-bold">
               Get in Touch
+              <br/>
+              <i className="text-xs font-light">Fill in the form and we will get back to you within 1 business day no automated replies, no junior sales calls, no bot. Just a real conversation with our team.</i>
             </h1>
 
             <form
