@@ -48,7 +48,7 @@ const WhyChoose = () => {
   return (
     <section className="w-full bg-[--company-background-color] py-16">
       <span className="w-[80%] hidden md:block h-[1.5px] bg-[--company-color] mx-auto "></span>
-      <div className="max-w-screen-2xl mx-auto pt-[4rem] md:pt-[4rem]">
+      <div className="max-w-screen-2xl mx-6 md:mx-auto pt-[4rem] md:pt-[4rem]">
 
         {/* Header */}
         <div className="mb-14">

@@ -32,7 +32,7 @@ const StatsBar = () => {
   return (
     <section className="w-full bg-[--company-background-color] py-16">
       <span className="w-[80%] hidden md:block h-[1.5px] bg-[--company-color] mx-auto "></span>
-      <div className="max-w-screen-2xl mx-auto pb-[4rem] pt-[4rem] md:pt-[4rem]">
+      <div className="max-w-screen-2xl mx-6 md:mx-auto pb-[4rem] pt-[4rem] md:pt-[4rem]">
         <h1 className="text-[35px] md:text-[45px] lg:text-[55px] text-white capitalize mb-[1.5rem] font-Kanit font-semibold">
             Our Key Facts
         </h1>
