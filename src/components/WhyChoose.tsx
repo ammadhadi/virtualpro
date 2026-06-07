@@ -107,7 +107,7 @@ const WhyChoose = () => {
             who trust Virtual Pro to handle their digital growth.
           </p>
 
-          <button className="px-6 py-8 h-3xl w-2xl hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
+          <button className="px-6 py-4 h-3xl w-2xl hover:-translate-y-[15px] rounded-full transition-all duration-200 text-[14px] 
             sm:text-[18px] font-Kanit text-[--company-background-color] bg-slate-100 hover:bg-[--company-color] border-2 border-[--company-background-color] 
             hover:border-[--company-color]">
             Book a free strategy call →
