@@ -28,15 +28,23 @@ export type CurrentSlideData = {
 const sliderData = [
   {
     img: "/works/GreenScan.png",
-    title: "GreenScan",
+    title: "Green Scan",
     description:
       "GreenScan is a leading building performance consulting firm and independent assessment platform. The organization specializes in evaluating residential and commercial structures against complex regulatory standards to ensure they are environmentally responsible and structurally optimized.",
     location: "Python, Nextjs, Reactjs, NodeJs, API Development, PostgreSQL, Tailwind CSS, ",
     view: "https://greenscan.co.uk/",
   },
   {
+    img: "/works/Fourd.jpeg",
+    title: "Fourtify Defence",
+    description:
+      "Fourtify Defence, located at fourd.com.au, is an Australian-owned software platform designed to automate compliance for the Defence Industry Security Program (DISP) and enhance operational efficiency for SMEs. The platform manages governance, cyber compliance, and personnel vetting to streamline complex regulatory requirements.",
+    location: "Dot Net Core, Nextjs, Reactjs, NodeJs, API Development, Supabase, PostgreSql, Tailwind CSS",
+    view: "https://fourd.com.au/",
+  },
+  {
     img: "/works/BinSadiq-Web.jpeg",
-    title: "BinSadiq",
+    title: "Bin Sadiq",
     description:
       "It is a premier, full-service real estate company with over a decade of industry expertise. The company specializes in end-to-end property development, lifetime project management, investment consultancy, asset management, and marketing.",
     location: "Word Press, Elementor, Slider Revolution, PHP",
@@ -52,7 +60,7 @@ const sliderData = [
   },
   {
     img: "/works/LifeCareServiceAustralia.png",
-    title: "LifeCareServiceAustralia",
+    title: "Life Care Service Australia",
     description:
       "Life Care Services is a Blacktown-based, accredited NDIS provider delivering personalized supported independent living, community nursing, and social participation programs designed to foster independence. The organization offers comprehensive services, including 24-hour care and support coordination, to assist individuals in achieving their NDIS goals.",
     location: "Word Press, Elementor, Customization, CSS, JQuery, PHP",
@@ -60,7 +68,7 @@ const sliderData = [
   },
   {
     img: "/works/NobleCareSupportServices.png",
-    title: "NobleCareSupportServices",
+    title: "Noble Care Support Services",
     description:
       "Noble Care Support Services is a Blacktown-based provider offering tailored home care, aged care, and disability support services across Australia. Specializing in NDIS support coordination, community nursing, and 24/7 personalized care, the organization focuses on maximizing participant funding and fostering independent living.",
     location: "Word Press, Elementor, Customization, CSS, JQuery, PHP",
@@ -68,7 +76,7 @@ const sliderData = [
   },
   {
     img: "/works/KeysOperation.png",
-    title: "KeysOperation",
+    title: "Keys Operation",
     description:
       "Keys Operation is a digital coaching and business consulting platform. The business is designed to help entrepreneurs, startups, and small business owners build their online presence and scale in the digital landscape.",
     location: "Word Press, Elementor, Customization, Speed Optimization, Content Creation, SEO Opitmization, CSS, JQuery, PHP",
@@ -84,15 +92,15 @@ const sliderData = [
   },
   {
     img: "/works/PeoplesPhone.jpg",
-    title: "PeoplesPhone",
+    title: "Peoples Phone",
     description:
       "Peoples Phone is an established independent telecom price comparison website active since 2008. The platform serves as a digital broker, aggregating market data to help consumers find competitive rates on mobile hardware and monthly connectivity packages.",
     location: "Word Press, Elementor, Customization, API Integration, CSS, JQuery, PHP",
     view: "https://peoplesphone.co.uk/compare/",
   },
   {
-    img: "/works/ForsterTareeCranes.jpg",
-    title: "ForsterTareeCranes",
+    img: "/works/ForsterTareeCranes.png",
+    title: "Forster Taree Cranes",
     description:
       "Forster Taree Cranes and Great Lakes Cranes is an established, reliable, and affordable heavy-lifting and crane hire company. The business specializes in supplying mobile equipment and machinery to handle heavy residential, commercial, and industrial rigging projects.",
     location: "Word Press, Elementor, Customization, Speed Optimization, CSS, JQuery, PHP",
@@ -100,7 +108,7 @@ const sliderData = [
   },
   {
     img: "/works/HopeChemicals.png",
-    title: "HopeChemicals",
+    title: "Hope Chemicals",
     description:
       "Hope Chemicals is an established consumer goods company with over 20 years of industry experience, specializing in advanced, household-grade cleaning solutions. The online platform operates as a direct-to-consumer digital store, providing individuals and businesses with dedicated chemical cleaning agents designed for residential upkeep.",
     location: "Word Press, Elementor, Customization, Speed Optimization, CSS, JQuery, PHP",
@@ -160,62 +168,100 @@ const initData = sliderData[0];
 
 export default function Home() {
   const [data, setData] = React.useState<Data[]>(sliderData.slice(1));
+
   const [transitionData, setTransitionData] = React.useState<Data>(
     sliderData[0]
   );
+
   const [currentSlideData, setCurrentSlideData] =
     React.useState<CurrentSlideData>({
       data: initData,
       index: 0,
     });
 
+  const handlePrev = () => {
+    setData((prevData) => [
+      transitionData || initData,
+      ...prevData.slice(0, prevData.length - 1),
+    ]);
+
+    setCurrentSlideData({
+      data: transitionData || sliderData[0],
+      index: sliderData.findIndex(
+        (ele) => ele.img === data[data.length - 1].img
+      ),
+    });
+
+    setTransitionData(data[data.length - 1]);
+  };
+
+  const handleNext = () => {
+    setData((prev) => prev.slice(1));
+
+    setCurrentSlideData({
+      data: transitionData || initData,
+      index: sliderData.findIndex(
+        (ele) => ele.img === data[0].img
+      ),
+    });
+
+    setTransitionData(data[0]);
+
+    setTimeout(() => {
+      setData((newData) => [
+        ...newData,
+        transitionData || initData,
+      ]);
+    }, 500);
+  };
+
   return (
-    <div className="" id="CaseStudies">
+    <section id="CaseStudies">
       <main
-        className={`
-       ${inter.className}
-        relative min-h-screen  select-none overflow-hidden text-white antialiased`}
+        className={`${inter.className} relative min-h-screen overflow-hidden text-white antialiased`}
       >
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <BackgroundImage
             transitionData={transitionData}
             currentSlideData={currentSlideData}
           />
-          <div className="  absolute z-20 h-full w-full">
-            <div className="absolute mt-3 w-full px-5 opacity-90 px-auto md:px-20 lg:px-40 pt-[8rem]">
-              <h1 className="flex items-center font-Kanit text-[17px] md:text-[20px] text-[--company-color]">
+
+          {/* Content Layer */}
+          <div className="relative z-20">
+            {/* Heading */}
+            <div className="px-5 pt-24 md:px-20 lg:px-40 md:pt-32">
+              <h1 className="font-Kanit text-[17px] text-[--company-color] md:text-[20px]">
                 Our Work
-                {/* <span className="w-[30px] hidden md:block h-[2.8px] bg-[--company-color] rounded-sm ml-2.5 mt-1.5"></span> */}
               </h1>
-              <h2 className="text-[35px] md:text-[45px] lg:text-[55px] text-white md:leading-[3rem] leading-[2rem] capitalize mb-[1.5rem] font-Kanit font-semibold">
+
+              <h2 className="mb-8 font-Kanit text-[35px] font-semibold text-white md:text-[45px] lg:text-[55px]">
                 Featured Project!
               </h2>
             </div>
-            <div className="mt-32 flex h-full w-full grid-cols-10 flex-col md:grid">
-              <div className=" col-span-4 mb-3 flex h-full flex-1 flex-col justify-end px-5 md:mb-0 md:justify-center md:px-10">
+
+            {/* Content Grid */}
+            <div className="flex flex-col gap-10 px-5 pb-10 md:grid md:min-h-[60vh] md:grid-cols-10 md:gap-0 md:px-10">
+              {/* Left Side */}
+              <div className="col-span-6 flex flex-col justify-center">
                 <SlideInfo
                   transitionData={transitionData}
                   currentSlideData={currentSlideData}
+                  onPrev={handlePrev}
+                  onNext={handleNext}
+                  totalSlides={sliderData.length}
                 />
               </div>
 
-              <div className=" col-span-6 flex h-full flex-1 flex-col justify-start p-4 md:justify-center md:p-10">
-                <Slides data={data} />
-                <Controls
-                  currentSlideData={currentSlideData}
-                  data={data}
-                  transitionData={transitionData}
-                  initData={initData}
-                  handleData={setData}
-                  handleTransitionData={setTransitionData}
-                  handleCurrentSlideData={setCurrentSlideData}
-                  sliderData={sliderData}
-                />
+              {/* Right Side */}
+              <div className="col-span-6 flex flex-col justify-end">
+                <div className="relative z-10">
+                  <Slides data={data} />
+                </div>
               </div>
             </div>
           </div>
         </AnimatePresence>
       </main>
-    </div>
+    </section>
   );
 }

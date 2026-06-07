@@ -28,7 +28,7 @@ const service = [
     icon: "/images/s_3.png",
     title: "Social Media Management & Marketing",
     description:
-      "Boost your brand's online presence with our social media management and marketing services",
+      "Boost your brand's online presence with our social media management and marketing services including paid marketing",
   },
   {
     sequence: 5,
@@ -59,18 +59,18 @@ const service = [
       "With our content creation services, we help businesses drive results and provide interactive, attractive and impressive videos",
   },
   {
-    sequence: 9,
-    icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
-    description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
-  },
-  {
     sequence: 10,
-    icon: "/images/s_2.png",
+    icon: "/images/AIAutomation.png",
     title: "AI & Automation",
     description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+      "We deliver intelligent AI and automation tools to streamline workflows, eliminate manual tasks, and optimize operational efficiency",
+  },
+  {
+    sequence: 9,
+    icon: "/images/RemoteResourcesSupport.png",
+    title: "Remote Resources & Support",
+    description:
+      "We deliver on-demand virtual support, system maintenance & scalable expert staffing to optimize global business operations",
   },
 ];
 

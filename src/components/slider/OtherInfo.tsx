@@ -28,7 +28,7 @@ function OtherInfo({ data }: Props) {
         data={data?.title}
       />
       <AnimatedText
-        className=" text-xs text-[#D5D5D6]"
+        className=" text-xs text-[#D5D5D6] mb-2"
         data={data?.description}
       />
     </motion.div>
