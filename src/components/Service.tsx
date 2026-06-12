@@ -101,7 +101,7 @@ const Service = () => {
             {service.map((service) => (
               <div
                 key={service.sequence}
-                className="font-Kanit flex flex-col justify-between h-full w-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-3xl"
+                className="font-Kanit flex flex-col justify-between h-full w-full space-y-4 text-center bg-gray-100 text-black p-4 cursor-pointer hover:scale-105 transition-transform rounded-3xl"
               >
                 <Image
                   src={service.icon}
@@ -110,10 +110,12 @@ const Service = () => {
                   className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
                   alt={service.title}
                 />
-                <h1 className="font-Kanit text-xl font-medium">
+
+                <h1 className="font-Kanit text-xl font-medium text-gray-900">
                   {service.title}
                 </h1>
-                <p className="font-Kanit text-gray-500">
+
+                <p className="font-Kanit text-gray-600">
                   {service.description}
                 </p>
               </div>
