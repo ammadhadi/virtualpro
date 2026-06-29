@@ -11,7 +11,7 @@ const About = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="100"
-          className="ml-3 md:mx-0 mt-[-1.5rem] md:mt-[-3rem] lg:w-[600px] lg:h-[600px] w-[300px] h-[300px] relative"
+          className="ml-3 md:mx-0 mt-[-1.5rem] md:mt-[-3rem] lg:w-[500px] lg:h-[500px] w-[300px] h-[300px] relative"
         >
           <Image
             priority
